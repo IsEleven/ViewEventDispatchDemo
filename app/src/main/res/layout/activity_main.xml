@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.judgelee.vieweventdemo.view.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/ll_container"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:clickable="true"
+  android:gravity="center_horizontal"
+  android:orientation="vertical"
+  tools:context="com.judgelee.vieweventdemo.MainActivity">
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickDetach"
+    android:text="ListViewDetach" />
+
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickEventDispatch"
+    android:text="event dispatch" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickOverlapView"
+    android:text="overlap view" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickNestedRecyclerView"
+    android:text="Nested RecyclerView " />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickListClick"
+    android:text="ListView Click" />
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickDrawerLayout"
+    android:text="DrawerLayout" />
+
+
+  <Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onClickToast"
+    android:text="test toast" />
+
+
+  <com.judgelee.vieweventdemo.view.CustomTextView
+    android:id="@+id/tv_test_focus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Test Focus" />
+
+  <EditText
+    android:id="@+id/et_test_focus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Test Focus" />
+
+</com.judgelee.vieweventdemo.view.CustomLinearLayout>
